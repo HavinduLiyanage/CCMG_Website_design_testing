@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { teamMembers } from "@/lib/content";
 
 export function ManagementSection() {
@@ -24,12 +23,10 @@ export function ManagementSection() {
             {teamMembers.map((m) => (
               <article key={m.name} className="group">
                 <div className="relative aspect-[368/432] overflow-hidden rounded-2xl bg-white/5">
-                  <Image
+                  <img
                     src={m.image}
                     alt={m.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 420px"
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                   />
                   {/* Hover-revealed bio overlay */}
                   <div className="absolute inset-0 flex flex-col justify-end p-6 bg-gradient-to-t from-[#071d49]/95 via-[#071d49]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">

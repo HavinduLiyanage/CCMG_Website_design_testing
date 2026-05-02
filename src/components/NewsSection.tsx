@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
 import { newsArticles } from "@/lib/content";
@@ -28,12 +27,10 @@ export function NewsSection() {
               className="group flex flex-col gap-5 p-5 rounded-2xl border border-[#dddddd] hover:shadow-lg hover:border-[#5c88da]/40 transition-all"
             >
               <div className="relative aspect-[382/260] overflow-hidden rounded-lg bg-[#f4f6f9]">
-                <Image
+                <img
                   src={n.image}
                   alt={n.title}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
 

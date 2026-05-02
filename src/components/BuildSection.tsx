@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/icons";
 
@@ -51,12 +50,9 @@ export function BuildSection() {
         </div>
 
         <div className="mt-16 md:mt-24 zoom-wrap rounded-2xl overflow-hidden">
-          <Image
-            src="/images/about-buildings.webp"
+          <img
+            src="./images/about-buildings.webp"
             alt="UzOman corporate buildings"
-            width={1440}
-            height={491}
-            sizes="(max-width: 1280px) 100vw, 1304px"
             className="zoom-target w-full h-auto object-cover"
           />
         </div>

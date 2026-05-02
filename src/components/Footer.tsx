@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon, LinkedInIcon, XSocialIcon } from "@/components/icons";
 
@@ -18,11 +17,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-3">
             <Link href="/" aria-label="UzOman home">
-              <Image
-                src="/images/logo-footer.avif"
+              <img
+                src="./images/logo-footer.avif"
                 alt="UzOman Investment Company"
-                width={240}
-                height={57}
                 className="h-12 w-auto"
               />
             </Link>

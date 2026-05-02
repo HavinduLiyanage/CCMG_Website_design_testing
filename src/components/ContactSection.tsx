@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
 
@@ -31,12 +30,10 @@ export function ContactSection() {
         <div className="overflow-hidden rounded-[28px] grid grid-cols-1 lg:grid-cols-2 bg-[#f2f2f2]">
           {/* Left – contact intro with photo background */}
           <div className="relative p-8 md:p-12 min-h-[420px] lg:min-h-[640px] overflow-hidden">
-            <Image
-              src="/images/contact-bg.webp"
+            <img
+              src="./images/contact-bg.webp"
               alt=""
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover object-bottom"
+              className="absolute inset-0 w-full h-full object-cover object-bottom"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/60 to-white/30" />
             <div className="relative">

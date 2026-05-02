@@ -1,24 +1,17 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export function HeroSection() {
   return (
     <section className="relative min-h-[704px] h-screen max-h-[900px] overflow-hidden text-white">
-      <Image
-        src="/images/hero-bg-desktop.webp"
+      <img
+        src="./images/hero-bg-desktop.webp"
         alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover hidden md:block"
+        className="absolute inset-0 w-full h-full object-cover hidden md:block"
       />
-      <Image
-        src="/images/hero-bg-mobile.webp"
+      <img
+        src="./images/hero-bg-mobile.webp"
         alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover md:hidden"
+        className="absolute inset-0 w-full h-full object-cover md:hidden"
       />
       {/* Subtle dark overlay for text legibility */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#071d49]/45 via-[#071d49]/25 to-transparent" />
